@@ -4,8 +4,6 @@
 	User Location detector 
 	Requerment --: Jquery 3.*
 
-	just include this file below your jquery file and you find a global Array name user_location 
-
 	Copyrights : programmingplanet
 
 	facebook: https://www.facebook.com/codingplanet1
