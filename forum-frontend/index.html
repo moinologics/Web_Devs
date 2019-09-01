@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vaultboard</title>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="vendor/jquery-richtext-editor/richtext.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    	<br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 border rounded">
+                    <h4 class="text-center mt-4">VaultBoard</h4>
+                    <div class="">
+                    	<ul class="list-group text-dark">
+	                        <li class="list-group-item border-0">
+	                        	<a href="#">Questions</a>
+	                        </li>
+	                        <li class="list-group-item border-0 ">
+		                        <a href="#">Tags</a>
+		                    </li>
+	                        <li class="list-group-item border-0 ">
+	                        	<a href="#">Users</a>
+	                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card" id="Qn">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                            	Why does the count variable has to be defined outside the curly brackets of the for loop?
+                        	</h3>
+                            <span>Asked today, Viewed 21 times</span>
+                            <span class="float-right">Asked by <a href="#">user1</a></span>
+                            <br><hr>
+                            <p class="card-text my-3">
+                            	As you can see in the two below codes, I get different results when I use the count variable outside the for loop curly brackets. Can someone please tell me why?
+								As you can see the first result only prints three i values. So my question is why the count variable can not be defined in the curly brackets of the for loop as I have done in the first code.
+							</p>
+                            <div class="">
+                            	<span class="bedge badge-info px-3 py-1">java</span>
+                            	<span class="bedge badge-info px-3 py-1">Loops</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+					<div class="mt-4" id="ans" style="min-height: 300px"><br>
+						<h4 class="mx-3">Answers For This Question</h4><br>
+	                    <div class="card my-2">	
+	                       	<div class="card-body">
+	                       		<div class="card-title">
+		                    		<span>Answer today, Viewed 21 times</span>
+		                            <span class="float-right">Answerd by <a href="#">user1</a></span>
+		                    	</div>
+                    			<hr>
+	                            <p class="card-text my-3">
+	                            	As you can see in the two below codes, I get different results when I use the count variable outside the for loop curly brackets. Can someone please tell me why?
+									As you can see the first result only prints three i values. So my question is why the count variable can not be defined in the curly brackets of the for loop as I have done in the first code.
+								</p>
+	                        </div>
+	                    </div>
+
+					</div>
+					<br><hr>
+					<div class="my-5" id="write-ans">
+						<h4 class="text-center my-2">Write your Answer</h4>
+						<div class="page-wrapper box-content">
+				            <textarea class="jquery-editor" id="writeans"></textarea>
+				        </div>
+					</div>
+                </div>
+                <div class="col-lg-2 border rounded">
+                	
+                </div>
+            </div>
+        </div><br><br>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery-richtext-editor/jquery.richtext.min.js"></script>
+    </body>
+</html>
+<script>
+	$(document).ready(function() {
+            $('.jquery-editor').richText();
+    });
+</script>
