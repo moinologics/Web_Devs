@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery3.4.1.min.js"></script>
+<script type="text/javascript" src="js/simpleUpload.min.js"></script>
+
+<script type="text/javascript">
+
+function upload(){
+
+		$('input[type=file]').simpleUpload("server/upload.php", {
+
+			start: function(file){
+				//upload started
+				$('#status').html("upload started");
+			},
+
+			progress: function(progress){
+				//received progress
+				$('#status').html("<br>upload progress: " + Math.round(progress) + "%");
+			},
+
+			success: function(data){
+				//upload successful
+				$('#status').append("<br>upload successful!");
+				console.log(data);
+			},
+
+			error: function(error){
+				//upload failed
+				$('#status').append("<br>upload error: " + error.name + ": " + error.message);
+			}
+
+		});
+
+	}
+
+</script>
+
+</head>
+<body>
+
+<input type="file" name="file">
+<input type="submit" onclick="upload()">
+
+<br><br>
+
+<div id="status"></div>
+
+</body>
+</html>
